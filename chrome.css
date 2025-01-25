@@ -1,0 +1,15 @@
+#navigator-toolbox {
+  .tabbrowser-tab:is([image], [pinned])
+    > .tab-stack
+    > .tab-content[attention]:not([selected]),
+  .tabbrowser-tab
+    > .tab-stack
+    > .tab-content[pinned][titlechanged]:not([selected]) {
+    background-image: none !important;
+  }
+  .tabbrowser-tab
+    > .tab-stack
+    > .tab-content[titlechanged]:not([selected="true"]) {
+    background-image: none !important;
+  }
+}
